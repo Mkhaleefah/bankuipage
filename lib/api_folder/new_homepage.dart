@@ -23,8 +23,6 @@ class MyApp extends StatelessWidget {
 }
 
 class NewHomePage extends StatefulWidget {
-  // const NewHomePage({super.key});
-
   @override
   State<NewHomePage> createState() => _NewHomePageState();
 }
@@ -125,39 +123,12 @@ class _NewHomePageState extends State<NewHomePage> {
                   height: 20,
                 ),
                 Text(cardInfo['cardnumber']),
-                // Column(
-                //   children:  [
-                //     Padding(
-                //       padding: const EdgeInsets.only(right: 66),
-                //       child: Text(
-                //         '4332  2134  4538  2309',
-                //         style:
-                //             TextStyle(fontSize: 20, color: Colors.white),
-                //       ),
-                //     ),
-                //   //  Text(cardInfo['card'])
-                //   ],
-                // ),
+              
                 SizedBox(
                   height: 30,
                 ),
                 Text(cardInfo['avl_balance']),
-                // Column(
-                //   children: [
-                //     Padding(
-                //       padding: const EdgeInsets.only(right: 190),
-                //       child: Text(
-                //         'Available Balance',
-                //         style:
-                //             TextStyle(fontSize: 12, color: Colors.white),
-                //       ),
-                //     ),
-                //   ],
-                // ),
-                // SizedBox(
-                //   height: 10,
-                // ),
-                // Text(cardInfo['cardtype']),
+
                 Column(
                   children: [
                     Row(
@@ -234,10 +205,6 @@ class _NewHomePageState extends State<NewHomePage> {
                           borderRadius: BorderRadius.circular(10),
                           color: Colors.white,
                         ),
-                        // child: Icon(
-                        //   Icons.recommend,
-                        //   color: Colors.black87,
-                        // ),
                         child: Center(
                           child: Text(
                             "send",
@@ -412,14 +379,10 @@ class _NewHomePageState extends State<NewHomePage> {
                   height: 10,
                 ),
 
-                // Padding(
-                //   padding: const EdgeInsets.only(right: 50),
-                //  child:
                 Padding(
                   padding: const EdgeInsets.only(right: 60),
                   child: Row(
                     mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                    //  crossAxisAlignment: CrossAxisAlignment.end,
                     children: [
                       Container(
                         child: Text('Transactions',
@@ -483,101 +446,10 @@ class _NewHomePageState extends State<NewHomePage> {
           )
         ]))
       ]))),
-      // Stack(
-      //   children: [
-      //     Container(
-      //       width: 350,
-      //       height: 100,
-      //       decoration: BoxDecoration(
-      //         borderRadius: BorderRadius.circular(10),
-      //         color: Colors.grey[850],
-      //       ),
-      //     ),
-      //     Positioned(
-      //       top: 10,
-      //       left: 10,
-      //       child: Container(
-      //         width: 80,
-      //         height: 80,
-      //         decoration: BoxDecoration(
-      //           borderRadius: BorderRadius.circular(10),
-      //           color: Colors.white,
-      //         ),
-      //         child: Icon(Icons.person),
-      //       ),
-      //     ),
-      //     Positioned(
-      //       bottom: 10,
-      //       right: 10,
-      //       child: Container(
-      //         width: 80,
-      //         height: 20,
-      //         decoration: BoxDecoration(
-      //           borderRadius: BorderRadius.circular(10),
-      //           color: Colors.grey[850],
-      //         ),
-      //         // child: Center(
-      //         child: Text(),
-      //         //),
-      //       ),
-      //     ),
-      //   ],
-      // ),
-      // SizedBox(
-      //   height: 10,
-      // ),
-      // Stack(
-      //   children: [
-      //     Container(
-      //       width: 350,
-      //       height: 100,
-      //       decoration: BoxDecoration(
-      //         borderRadius: BorderRadius.circular(10),
-      //         color: Colors.grey[850],
-      //       ),
-      //     ),
-      //     Positioned(
-      //       top: 10,
-      //       left: 10,
-      //       child: Container(
-      //         width: 80,
-      //         height: 80,
-      //         decoration: BoxDecoration(
-      //           borderRadius: BorderRadius.circular(10),
-      //           color: Colors.white,
-      //         ),
-      //         child: Icon(Icons.person),
-      //       ),
-      //     ),
-      //     Positioned(
-      //       bottom: 10,
-      //       right: 10,
-      //       child: Container(
-      //         width: 80,
-      //         height: 20,
-      //         decoration: BoxDecoration(
-      //           borderRadius: BorderRadius.circular(10),
-      //           color: Colors.grey[850],
-      //         ),
-      //         // child: Center(
-      //         //   child: Text("Add"),
-      //         // ),
-      //       ),
-      //     ),
-      //   ],
-      // ),
-      //         ]))
-      //       ],
-      //     ),
-      //   ),
-
       bottomNavigationBar: BottomNavigationBar(
         fixedColor: Colors.pink,
-        // currentIndex: _selectedPage,
         onTap: (int index) {
-          setState(() {
-            // _selectedPage= index;
-          });
+          setState(() {});
         },
         items: [
           BottomNavigationBarItem(icon: Icon(Icons.home), label: ''),
