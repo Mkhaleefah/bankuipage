@@ -118,42 +118,36 @@ class _NewHomePageState extends State<NewHomePage> {
                     style: TextStyle(fontSize: 15, color: Colors.white),
                   ),
                 ),
-                //  Text(cardInfo['name']),
+
                 SizedBox(
                   height: 20,
                 ),
-                Text(cardInfo['cardnumber']),
-              
+                Text(cardInfo['cardnumber'], style: TextStyle(fontSize: 25)),
+
                 SizedBox(
                   height: 30,
                 ),
-                Text(cardInfo['avl_balance']),
-
-                Column(
-                  children: [
-                    Row(
-                      children: const [
-                        Padding(
-                          padding: EdgeInsets.only(right: 170, left: 10),
-                          child: Text(
-                            '\$8,4500',
-                            // style: TextStyle(
-                            //     fontSize: 19, color: Colors.white),
-                          ),
-                        ),
-                        Text(
-                          'VISA',
-                          style: TextStyle(
-                              fontSize: 23,
-                              fontStyle: FontStyle.italic,
-                              color: Colors.white),
-                        )
-                      ],
-                    ),
-                  ],
+                Padding(
+                  padding: const EdgeInsets.only(left: 30),
+                  child: Row(
+                    // crossAxisAlignment: CrossAxisAlignment.center,
+                    //  mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                    children: [
+                      Text(cardInfo['avl_balance'],
+                          style: TextStyle(fontSize: 20)),
+                    ],
+                  ),
                 ),
-                // SizedBox(height: 20,),
-                // Container(decoration: BoxDecoration(color: Colors.purpleAccent,borderRadius: BorderRadius.circular(20)),)
+                // SizedBox(
+                //   width: 30,
+                // ),
+                Padding(
+                  padding: const EdgeInsets.only(left: 120),
+                  child: Text(
+                    cardInfo['card_type'],
+                    style: TextStyle(fontSize: 20, fontStyle: FontStyle.italic),
+                  ),
+                )
               ],
             ),
           ),
